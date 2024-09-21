@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Raleway";
+}
+
+body {
+    color: white;
+    background-color: rgb(58, 57, 57);
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin:10px auto;
+}
+.heading h1 {
+    font-size: 49px;
+    color: white;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.heading p {
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+
+header{
+    background-color: rgb(80, 80, 80);
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+header .lgn{
+    color: black;
+    padding: 10px 20px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    font-size: 24px;
+    transition: 0.7s;
+    border-radius: 10px;
+}
+
+header button:hover{
+    background: transparent;
+    color: #fff;
+    border: 2px solid white;
+    transform: scale(1);
+}
+header .Logo{
+    color: #fff;
+    font-weight: 700;
+    font-size: 40px;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.navbar a{
+    position: relative;
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px
+}
+
+
+
+.navbar a::after{
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    transform: origin right;
+    transform: scaleX(0);
+    border-radius: 5px;
+    transition: transform .5s;
+}
+.navbar a:hover::after{
+    transform: origin left;
+    transform: scaleX(1);
+    text-decoration: none;
+}
+
+.box{
+    margin: 0 auto;
+    padding: 1em;
+    width: 400px;
+    height: 550px;
+    top: 100px;
+    color: white;
+    background: #1c1f2b;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+.box::after, .box::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: conic-gradient( blue, red, orange, blue); 
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 5px;
+    border-radius: 10px;
+}
+.box::before{
+    filter: blur(3rem);
+}
+h2 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    position: relative;
+    right: 105px;
+    top: 15px;
+    display: block;
+    font-weight: bold;
+    color: #fff;
+}
+
+.eml{
+    position: relative;
+    right: 120px;
+    top: 15px;
+    display: block;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+input {
+    width: 300px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.btnn {
+    position: relative;
+    top: 30px;
+    width: 100%;
+    padding: 12px;
+    background-image: linear-gradient(rgb(26, 155, 26), rgb(16, 71, 8));
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btnn:hover {
+    background-image: linear-gradient(hsl(120, 71%, 40%), hsl(112, 80%, 30%));
+}
+
+p {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.remember-forgot p a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.remember-forgot p a:hover {
+    text-decoration: underline;
+}

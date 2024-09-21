@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+.logo {
+    background-color: #193441;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+li {
+    margin: 15px;
+    font-size: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s;
+}
+
+a:hover {
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    color: rgb(171, 171, 171);
+    transition: 0.5s ease-in-out;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #193441;
+    color: white;
+}
+body {
+    background-color: rgb(216, 255, 255);
+}
+.card button {
+    position: relative;
+    top: 12px;
+    border: none;
+    background-color: hsl(239, 77%, 35%);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    transition: 0.25s;
+}
+
+.card button:hover {
+    border-radius: 20px;
+    background-color: hsl(239, 77%, 50%);
+    transition: 0.4s ease-in-out;
+    box-shadow: 0 0 10px #71009d, 0 0 10px #71009d, 0 0 9px #71009d, 0 0 8px #71009d, 0 0 10px #71009d, 0 0 10px #71009d, 0 0 8px #71009d, 0 0 7px #71009d;
+}
+
+.card button:active {
+    background-color: hsl(239, 87%, 69%);
+}
+
+
+.products {
+    padding: 2rem 0;
+}
+
+.flex {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    background-color: #333;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+    width: calc(33.333% - 1rem);
+}
+
+.card img {
+    filter:  contrast(1.2) saturate(1.2);
+    height: 700px;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.discount {
+    text-decoration: line-through;
+    color: #999;
+}
